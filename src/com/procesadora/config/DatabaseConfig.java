@@ -12,8 +12,6 @@ public class DatabaseConfig {
 
     static {
         try {
-            // Leemos el archivo de configuración
-            // IMPORTANTE: Esta ruta es relativa a donde ejecutas el comando java
             properties.load(new FileInputStream("src/com/procesadora/resources/config.properties"));
         } catch (IOException ex) {
             System.err.println("Error: No se encuentra config.properties. Revisa la ruta.");
